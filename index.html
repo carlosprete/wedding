@@ -1,9 +1,137 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Tayná e Carlos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
-    <p>Ou seria <strong>Carlos</strong> e Tayná?</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
+  <script>
+    AOS.init();
+  </script>
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="90">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Bem-vindos ao nosso <span>casamento</span></h1>
+          <h2>Criamos este site para que você possa aproveitar ao máximo a nossa festa</h2>
+          <div class="btns">
+            <a href="#menu" class="btn animated fadeInUp scrollto">Cardápio</a>
+            <a href="#piada" class="btn animated fadeInUp scrollto">Deixe sua marca!</a>
+            <a href="#oque" class="btn animated fadeInUp scrollto">Cronograma da festa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <main id="main">
+
+      <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Cardápio</h2>
+            <p>Confira nosso cardápio</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-xl-12 d-flex justify-content-center">
+              <ul id="menu-groups">
+                <a href="#frios"><li>Mesa de Frios</li></a>
+                <a href="#frias"><li>Entradas frias</li></a>
+                <a href="#porcoes"><li>Porções</li></a>
+                <a href="#petitmenu"><li>Petit Menu</li></a>
+                <a href="#sushi"><li>Ilha de Sushi</li></a>
+                <a href="#bebidas"><li>Bebidas</li></a>
+                <a href="#sobremesas"><li>Sobremesas</li></a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu-block-title" id="frios">Frios</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Queijo Gouda</li>
+              <li>Queijo Brie</li>
+              <li>Queijo Parmesão</li>
+              <li>Queijo Gorgonzola</li>
+              <li>Salame</li>
+              <li>Copa</li>
+              <li>Peito de Peru</li>
+              <li>Lombinho</li>
+              <li>Petit Frios</li>
+              <li>Frutas</li>
+            </ul>
+          </div>
+
+          <div class="menu-block-title" id="frias">Entradas Frias</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Mousse de gorgonzola com tomate confitado</li>
+              <li>Terrine de queijo brie e mel</li>
+              <li>Canapês com mussarela de búfala, tomate seco e rúcula</li>
+              <li>Canapês com patê de Gorgonzola e Molho de Frutas Vermelhas</li>
+              <li>Guacamole</li>
+              <li>Salada na taça</li>
+            </ul>
+          </div>
+
+
+          <div class="menu-block-title" id="porcoes">Porções</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Batata Frita</li>
+              <li>Mandioca Frita</li>
+              <li>Bolinho de Carne Recheado com Queijo</li>
+              <li>Bolinha de Queijo</li>
+              <li>Coxinha</li>
+              <li>Croquete</li>
+              <li>Anel de Cebola</li>
+              <li>Frango Empanado</li>
+            </ul>
+          </div>
+
+
+          <div class="menu-block-title" id="petitmenu">Petit Menu</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Mignon ao Molho de Gorgonzola</li>
+              <li>Filé Mignon Suíno Acebolado</li>
+              <li>Linguiça Gourmet</li>
+              <li>Escondidinho de carne seca</li>
+              <li>Risotto de parmesão com alho poró</li>
+              <li>Pães Variados</li>
+            </ul>
+          </div>
+
+          </section>
+
+    <script>
+        let navbarlinks = select('#navbar .scrollto', true)
+  const navbarlinksActive = () => {
+    let position = window.scrollY + 200
+    navbarlinks.forEach(navbarlink => {
+      if (!navbarlink.hash) return
+      let section = select(navbarlink.hash)
+      if (!section) return
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarlink.classList.add('active')
+      } else {
+        navbarlink.classList.remove('active')
+      }
+    })
+  }
+  window.addEventListener('load', navbarlinksActive)
+  onscroll(document, navbarlinksActive)
+    </script>
+
 </html>
+
