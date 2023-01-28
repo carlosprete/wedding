@@ -1,12 +1,13 @@
-/* Hero */
 
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../images/background.jpg") top center;
+    background: url("../images/background.jpg") center center;
     background-size: cover;
     position: relative;
     padding: 0;
+    top: 500;
+    left: 500;
   }
   
   #hero:before {
@@ -19,17 +20,13 @@
     right: 0;
   }
   
-  #hero .container {
-    padding-top: 110px;
-  }
-  
   #hero h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 42px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Garamond";
   }
   
   #hero h1 span {
@@ -44,11 +41,22 @@
   
   #hero .btns {
     margin-top: 15px;
+    margin-left:auto;
+    align-items: center;
+    line-height: 10vh;
+    display: 'table-cell';
+    vertical-align: 'middle';
+    border-left: solid;
+    border-color: #cda45e;
+    border-width: 0;
+    text-align: center;
   }
 
+
   #hero .btn{
+    margin-left: 0.25vw;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     display: inline-block;
@@ -56,8 +64,9 @@
     border-radius: 25px;
     transition: 0.3s;
     line-height: 1;
-    color: white;
-    border: 2px solid #cda45e;
+    color: #f5d7d0;
+    border: 3px solid #cda45e;
+    background-color:#cda45e42
   }
   
   #hero .btn:hover {
@@ -67,7 +76,7 @@
 
   @-webkit-keyframes pulsate-btn {
     0% {
-      transform: scale(0.6, 0.6);
+      transform: scale(0.3, 0.3);
       opacity: 1;
     }
   
@@ -79,7 +88,7 @@
   
   @keyframes pulsate-btn {
     0% {
-      transform: scale(0.6, 0.6);
+      transform: scale(0.3, 0.3);
       opacity: 1;
     }
   
@@ -91,37 +100,34 @@
 
 
 section {
-    padding: 60px 0;
+    padding: 0 0;
     overflow: hidden;
   }
   
-  .section-bg {
-    background-color: #fdf9f8;
-  }
-  
   .section-title {
-    padding-bottom: 40px;
+    padding-bottom: 0.5vw;
   }
   
   .section-title h2 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 8vw;
+    font-weight: bolder;
     padding: 0;
-    line-height: 1px;
-    margin: 0 0 5px 0;
+    line-height: 5px;
+    margin-top: 4vw;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
+    color: #634922;
+    font-family: "Garamond";
   }
   
   .section-title h2::after {
     content: "";
-    width: 120px;
-    height: 1px;
+    width: 100%;
+    height: 2px;
     display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 4px 10px;
+    margin: 3.5vw 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #634922, #00000000) 1;
+    border-width: medium;
   }
   
   .section-title p {
@@ -129,15 +135,14 @@ section {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
-    font-family: "Playfair Display", serif;
-    color: #715326;
+    font-family: "Garamond";
   }
 
 
 
   /* Cardapio */
 
-  .menu #cardapio {
+  .menu #menu-header {
     padding: 0;
     margin: 0 auto 0 auto;
     list-style: none;
@@ -145,64 +150,204 @@ section {
     border-radius: 50px;
   }
   
-  .menu #menu-groups li {
+  .menu #menu-groups ul{
+    align-content: center;
+    justify-content: center;
+    display:flex
+  }
+
+  .menu #menu-groups .btn{
     cursor: pointer;
-    display: inline-block;
-    padding: 8px 12px 10px 12px;
-    font-size: 16px;
-    font-weight: 500;
+    padding: 1vw 1vw 1vw 1vw;
+    font-size: 4vw;
+    font-weight: bolder;
     line-height: 1;
     color: #715326;
-    margin-bottom: 10px;
-    transition: all ease-in-out 0.3s;
-    border-radius: 50px;
-    font-family: "Playfair Display", serif;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    transition: all ease-in-out 0.5s;
+    border-radius: 10px;
+    font-family: "Garamond";
+    background-color: rgba(245, 191, 141, 0.25);
+    display: inline-flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#725327cb
   }
   
-  .menu #menu-groups li:hover,
-  .menu #menu-groups li.filter-active {
-    color: #a87d4f;
+  .menu #menu-groups .btn:hover{
+    color: #573f1e;
+    background-color: rgba(245, 191, 141, 1.0);
+    border-color:#573f1e;
   }
   
-  .menu #menu-groups li:last-child {
-    margin-right: 0;
+  .menu-section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    padding: 0;
+    background-color:rgb(245, 191, 141)
+  }
+
+  .menu-section:before{
+    background-size: cover;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.40;
+    border-bottom: solid;
+    border-color:rgba(0, 0, 0, 0.5);
+    border-width: thick;
+  }
+
+  #menu-header:before{
+    background: url("../images/menuheader.png") center center;
+    border-top: solid;
+  }
+
+  #frios:before{
+    background: url("../images/frios.jpg") center center;
+  }
+
+  #frias:before{
+    background: url("../images/frias.jpg") center center;
+  }
+
+  #porcoes:before{
+    background: url("../images/porcoes.png") center center;
+  }
+
+  #petitmenu:before{
+    background: url("../images/petitmenu.jpg") center center;
   }
   
-  .menu .menu-item {
-    margin-top: 50px;
+  #sushi:before{
+    background: url("../images/sushi.jpg") center center;
   }
-  
-  .menu .menu-img {
-    width: 70px;
-    border-radius: 50%;
-    float: left;
-    border: 5px solid rgba(255, 255, 255, 0.2);
+
+  #bebidas:before{
+    background: url("../images/bebidas.jpg") center center;
   }
-  
-  .menu .menu-block {
-    margin-left: 30px;
+
+  #sobremesas:before{
+    background: url("../images/sobremesas.jpg") center center;
+  }
+
+  .menu-block {
+    margin-left: 20px;
     margin-bottom: 30px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     position: relative;
-    color: #715326
+    color: #4d381a;
+    font-weight: 700;
+    font-size: 16px;
   }
 
-  .menu .menu-block-title {
-    margin-left: 30px;
+  .menu-block a{
+    color: #493f30;
+  }
+
+ .menu-block-title {
+    margin-left: 10px;
+    margin-bottom: 10px;;
     color:#503b1b;
     font-size: 24px;
     font-weight: 700;
-    font-family: "Playfair Display", serif;
+    font-family: "Garamond";
     position: relative;
+    text-align: center;
+
+    background-image:
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0),
+      rgba(158, 124, 93, 0.555),
+      rgba(0, 0, 0, 0)
+    );
+    border-radius: 10px;
+
   }
   
-  .menu .menu-ingredients {
-    margin-left: 85px;
-    font-style: italic;
+  .menu-block-subtitle {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color:#634922;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Garamond";
+    position: relative;
+    text-align: center;
+
+    background-image:
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0),
+      rgba(158, 124, 93, 0.555),
+      rgba(0, 0, 0, 0)
+    );
+    border-radius: 10px;
+  }
+
+
+  .menu-block-subsubtitle {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color:#493f30;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-family: "Garamond";
+    position: relative;
+    text-align: center;
+    font-style: italic;
   }
+
+  .menu-block li{
+    margin-bottom: 5px;
+    background-image:
+    linear-gradient(
+      to right, 
+      rgba(158, 124, 93, 0.555), 
+      rgba(255, 0, 0, 0)
+    );
+    border-radius: 10px;
+    padding-left: 15px;
+  }
+
+  .card-body{
+    border-radius: 25px;
+  }
+
+  .collapse{
+    border-radius: 25px;
+    background-color:rgba(201, 159, 119, 0.3);
+    margin-bottom: 1vw;
+  }
+
+
+  .cardapio-bartender li{
+    color: #493f30;
+    text-decoration: none;
+    background-image: none;
+  }
+
   
+  .cardapio-bartender span{
+    color: #574f43;
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .cardapio-bartender {
+    background-color:rgba(255, 255, 255, 0);
+    color: rgb(13, 95, 202);
+  }

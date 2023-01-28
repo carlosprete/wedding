@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Carlos & Tayná</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+
 
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </body>
-  <script>
-    AOS.init();
-  </script>
 
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="90">
+
+
+  <section id="hero" class="d-flex align-items-flex-start">
+    <div class="container position-relative text-lg-start" data-aos="zoom-in" data-aos-delay="90">
       <div class="row">
-        <div class="col-lg-8">
-          <h1>Bem-vindos ao nosso <span>casamento</span></h1>
-          <h2>Criamos este site para que você possa aproveitar ao máximo a nossa festa</h2>
-          <div class="btns">
-            <a href="#menu" class="btn animated fadeInUp scrollto">Cardápio</a>
-            <a href="#piada" class="btn animated fadeInUp scrollto">Deixe sua marca!</a>
-            <a href="#oque" class="btn animated fadeInUp scrollto">Cronograma da festa</a>
+        <span style="padding-bottom:10vh"></span>
+         <div class="col-lg-8">
+          <h1>Bem-vindos ao nosso <span>casamento</span></h1> <br/>
+          <h2>Criamos este site para que você possa aproveitar ao máximo a nossa festa</h2><br/>
+          <div class="btns col">
+            <li><a href="#menu-header" class="btn animated fadeInUp scrollto">Cardápio</a></li>
+            <li><a href="#marca" class="btn animated fadeInUp scrollto">Deixe sua marca!</a></li>
           </div>
         </div>
       </div>
@@ -35,28 +38,32 @@
 
     <main id="main">
 
-      <section id="menu" class="menu section-bg">
+      <section id="menu-header" class="menu menu-section">        
         <div class="container" data-aos="fade-up">
           <div class="section-title">
+            <br/>
             <h2>Cardápio</h2>
-            <p>Confira nosso cardápio</p>
           </div>
   
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-xl-12 d-flex justify-content-center">
-              <ul id="menu-groups">
-                <a href="#frios"><li>Mesa de Frios</li></a>
-                <a href="#frias"><li>Entradas frias</li></a>
-                <a href="#porcoes"><li>Porções</li></a>
-                <a href="#petitmenu"><li>Petit Menu</li></a>
-                <a href="#sushi"><li>Ilha de Sushi</li></a>
-                <a href="#bebidas"><li>Bebidas</li></a>
-                <a href="#sobremesas"><li>Sobremesas</li></a>
+          <div class="row" id="menu-groups" data-aos="fade-up" data-aos-delay="100">
+              <ul>
+                <a href="#frios" class="btn">Mesa de Frios</a>
+                <a href="#frias" class="btn">Entradas frias</a>
+                <a href="#porcoes" class="btn">Porções</a>
+                <a href="#petitmenu" class="btn">Petit Menu</a>
               </ul>
-            </div>
+              <ul>
+                <a href="#sushi" class="btn">Ilha de Sushi</a>
+                <a href="#sobremesas" class="btn">Sobremesas</a>
+                <a href="#bebidas" class="btn">Bebidas</a>
+              </ul>
           </div>
-
-          <div class="menu-block-title" id="frios">Frios</div>
+          
+          <br/>
+      </section>
+        <section class="menu-section" id="frios">
+          
+          <div class="menu-block-title">Frios</div>
           <div class="menu-block">
             <ul class="list-unstyled">
               <li>Queijo Gouda</li>
@@ -71,11 +78,13 @@
               <li>Frutas</li>
             </ul>
           </div>
+        </section>
 
-          <div class="menu-block-title" id="frias">Entradas Frias</div>
+        <section class="menu-section" id="frias">
+          <div class="menu-block-title">Entradas Frias</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Mousse de gorgonzola com tomate confitado</li>
+              <li>Mousse de Gorgonzola com Tomate Confitado</li>
               <li>Terrine de queijo brie e mel</li>
               <li>Canapês com mussarela de búfala, tomate seco e rúcula</li>
               <li>Canapês com patê de Gorgonzola e Molho de Frutas Vermelhas</li>
@@ -83,9 +92,10 @@
               <li>Salada na taça</li>
             </ul>
           </div>
+        </section>
 
-
-          <div class="menu-block-title" id="porcoes">Porções</div>
+        <section class="menu-section" id="porcoes">
+          <div class="menu-block-title">Porções</div>
           <div class="menu-block">
             <ul class="list-unstyled">
               <li>Batata Frita</li>
@@ -98,9 +108,10 @@
               <li>Frango Empanado</li>
             </ul>
           </div>
+        </section>
 
-
-          <div class="menu-block-title" id="petitmenu">Petit Menu</div>
+        <section class="menu-section" id="petitmenu">
+          <div class="menu-block-title">Petit Menu</div>
           <div class="menu-block">
             <ul class="list-unstyled">
               <li>Mignon ao Molho de Gorgonzola</li>
@@ -110,9 +121,10 @@
               <li>Risotto de Parmesão com Alho Poró</li>
               <li>Pães Variados</li>
             </ul>
-          </div>
-
-          <div class="menu-block-title" id="sushi">Ilha de Sushis</div>
+          </div> 
+        </section>
+        <section class="menu-section" id="sushi">
+          <div class="menu-block-title">Ilha de Sushis</div>
           <div class="menu-block">
             <ul class="list-unstyled">
               <li>Ceviche</li>
@@ -125,26 +137,132 @@
               <li>Temaki de Salmão Cebolinha e Crema Cheese Califórnia</li>
             </ul>
           </div>
+        </section>
 
-          <div class="menu-block-title" id="sobremesas">Sobremesas</div>
+        <section class="menu-section" id="sobremesas">
+          <div class="menu-block-title">Sobremesas</div>
+
+          <div class="menu-block-subtitle">Bolo</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Bolo</li>
-              <li>Massa de pão de ló. Recheios- Creme de leite ninho com nozes e creme de leite ninho com morango. Cobertura de Chantininho</li>
-              <li>Docinhos</li>
-              <li>Brigadeiro de nozes com doce de leite</li>
-              <li>Brigadeiro de pistache</li>
-              <li>Brigadeiro de chocolate belga</li>
-              <li>Brigadeiro de chocolate meio amargo</li>
-              <li>Brigadeiro de creme brule</li>
-              <li>Brigadeiro de nutella com avelã</li>
+              <li>Massa de pão de Ló recheada de creme de leite ninho com nozes e morango com cobertura de Chantininho</li>
+            </ul>
+          </div>
+          <div class="menu-block-subtitle">Docinhos</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Brigadeiro de Nozes com Doce de Leite</li>
+              <li>Brigadeiro de Pistache</li>
+              <li>Brigadeiro de Chocolate Belga</li>
+              <li>Brigadeiro de Chocolate Meio Amargo</li>
+              <li>Brigadeiro de Crème Brûlée</li>
+              <li>Brigadeiro de Nutella com Avelã</li>
               <li>Brigadeiro de Romeu e Julieta</li>
-              <li>Surpresa de uva</li>
-              <li>Brigadeiro de doce de leite com coco queimado</li>
+              <li>Surpresa de Uva</li>
+              <li>Brigadeiro de Doce de Leite com Coco Queimado</li>
+            </ul>
+          </div> 
+        </section>
+
+
+        <section class="menu-section" id="bebidas">
+          <div class="menu-block-title">Bebidas</div>
+          <div class="menu-block-subtitle">Bebidas servidas na mesa</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Água</li>
+              <li>Coca-Cola</li>
+              <li>Guaraná Antártica</li>
+              <li>Cerveja Original</li>
             </ul>
           </div>
 
-          </section>
+          <div class="menu-block-subtitle">Bebidas servidas pelo Bartender</div>
+          <div class="menu-block-subsubtitle">A partir das 23h30 </div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Suco de Laranja e Maracujá</li>
+
+              <a data-toggle="collapse" href="#collapse-alcoolicas" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
+                <li> Sugestões de Drinks Alcóolicos (clique para expandir) </li></a>
+
+                <div class="collapse" id="collapse-alcoolicas">
+                  <div class="cardapio-bartender card card-body">
+                    <ul class="list-unstyled">
+                      <li>Caipirinha <span> Pinga, morango ou limão e gelo </span></li>
+                      <li>Caipirosca <span> Vodka, gelo e fruta a escolha: Morango, Limão ou Abacaxi</span></li>
+                      <li>Sakerita <span> Sake, morango ou kiwi e gelo </span></li>
+                      <li>Sakerita - tropical grape <span> Sake, gelo, uva e abacaxi</span></li>
+                      <li>Tropical Rum <span> Rum, morango ou kiwi, dose de citrus e gelo </span></li>
+                      <li>Mojito <span> Rum, limão, hortelã e gelo </span></li>
+                      <li>Cuba <span> Rum, limão, Coca-Cola e gelo </span></li>
+                      <li>Gin tônica com especiarias <span> Gin, especiarias a escolha. Opcional: Água de coco </span></li>
+                      <li>Caipirinha de vinho <span> Vinho tinto suave, limão açúcar e gelo </span></li>
+                      <li>Espanhola <span> Vinho tinto suave, abacaxi, leite condensado e gelo </span></li>
+                      <li>Sensação <span> Vinho tinto suave, morango, leite condensado e gelo </span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a data-toggle="collapse" href="#collapse-nao-alcoolicas" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
+                  <li> Sugestões de Coquetéis Não-Alcóolicos (clique para expandir) </li></a>
+  
+                  <div class="collapse" id="collapse-nao-alcoolicas">
+                    <div class="cardapio-bartender card card-body">
+                      <ul class="list-unstyled">
+                        <li>Morango, abacaxi e limão <span> com soda e gelo </span></li>
+                        <li>Morango <span> com suco de maracujá e gelo</span></li>
+                        <li>Morango e abacaxi <span> com suco de laranja e gelo </span></li>
+                        <li>Morango e kiwi <span> com suco de laranja e gelo</span></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <a data-toggle="collapse" href="#collapse-monte" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
+                    <li> Monte seu drink (clique para expandir) </li></a>
+    
+                    <div class="collapse" id="collapse-monte">
+                      <div class="cardapio-bartender card card-body">
+                        <ul class="list-unstyled">
+                          <li><b>Bebidas alcóolicas:</b> Vodka, Cachaça, Vinho Tinto Suave, Rum, Gim e Sake</li>
+                          <li>Bebidas não-alcóolicas: Suco de Laranja, Maracujá, Água de Coco, Soda e Citrus</li>
+                          <li>Frutas: Morango, Kiwi, Limão, Abacaxi e Uva</li>
+                          <li>Especiarias: Alecrim, Hortelã, Cravo, Canela, Pimenta Rosa e Anis Estrelado</li>
+                        </ul>
+                      </div>
+                    </div>
+                  
+
+
+            </ul>
+          </div>
+
+
+
+
+          <div class="menu-block-subtitle">Bebidas disponíveis no Cantinho do Whisky</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Whisky Chivas Regal 12 anos</li>
+              <li>Whisky Ballantine's 12 anos</li>
+              <li>Whisky Johnnie Walker Black Label</li>
+              <li>Whisky Johnnie Walker Double Black</li>
+              <li>Whisky Jack Daniel's</li>
+            </ul>
+          </div>
+
+          <div class="menu-block-subtitle">Bebidas servidas após o brinde</div>
+          <div class="menu-block-subsubtitle">Os espumantes serão servidos na mesa e depois ficarão disponíveis no Cantinho do Whisky</div>
+          <div class="menu-block">
+            <ul class="list-unstyled">
+              <li>Espumante Salton Prosecco</li>
+              <li>Espumante Salton Moscatel</li>
+            </ul>
+          </div>
+
+        </section>
+
+
 
     <script>
         let navbarlinks = select('#navbar .scrollto', true)
@@ -164,6 +282,42 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
     </script>
+
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+  
+<!--
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Button with data-target
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+  </div>
+
+  
+  <a class="btn btn-link" href="#" data-toggle="collapse" data-target="#target1">
+      What is Lorem Ipsum?
+  </a>
+  <div id="target1" class="collapse">
+     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ...
+  </div>
+-->
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 </html>
 
