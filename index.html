@@ -7,8 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    
     <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
 
@@ -18,21 +16,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-
-  <section id="hero" class="d-flex align-items-flex-start">
+  <section id="home-hero" class="hero d-flex align-items-flex-start">
     <div class="container position-relative text-lg-start" data-aos="zoom-in" data-aos-delay="90">
       <div class="row">
         <span style="padding-bottom:10vh"></span>
          <div class="col-lg-8">
           <h1>Bem-vindos ao nosso <span>casamento</span></h1> <br/>
           <h2>Criamos este site para que você possa aproveitar ao máximo a nossa festa</h2><br/>
-          <div class="btns col">
+          <ul class="btns col list-unstyled">
             <li><a href="#menu-header" class="btn animated fadeInUp scrollto">Cardápio</a></li>
-            <li><a href="#marca" class="btn animated fadeInUp scrollto">Deixe sua marca!</a></li>
+            <li><a data-toggle="collapse" href="#collapse-marca" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas" class="btn animated fadeInUp scrollto">Deixe sua marca!</a></li>
+          </ul>
+
+          <div class="collapse quadro-frame" id="collapse-marca">
+              <img class="img-responsive" style="float:right;width:40vw;height:auto;margin-right:3vw;border-radius:5px;opacity:0.75;" src="./images/quadro.png">
+              <h6>Deixamos disponível o nosso quadro de digitais para que você nos deixe uma lembrança unicamente sua.</h6>
+              <br/>
+              <h5>Dê uma passadinha por lá!</h5>
           </div>
+
         </div>
+        
       </div>
+
+
     </div>
   </section>
 
@@ -45,7 +52,7 @@
             <h2>Cardápio</h2>
           </div>
   
-          <div class="row" id="menu-groups" data-aos="fade-up" data-aos-delay="100">
+          <div class="row" id="menu-groups" data-aos="flip-right" data-aos-delay="100">
               <ul>
                 <a href="#frios" class="btn">Mesa de Frios</a>
                 <a href="#frias" class="btn">Entradas frias</a>
@@ -66,125 +73,125 @@
           <div class="menu-block-title">Frios</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Queijo Gouda</li>
-              <li>Queijo Brie</li>
-              <li>Queijo Parmesão</li>
-              <li>Queijo Gorgonzola</li>
-              <li>Salame</li>
-              <li>Copa</li>
-              <li>Peito de Peru</li>
-              <li>Lombinho</li>
-              <li>Petit Frios</li>
-              <li>Frutas</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor="#frios">Queijo Gouda</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="350"  data-aos-anchor="#frios">Queijo Brie</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="400"  data-aos-anchor="#frios">Queijo Parmesão</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="450"  data-aos-anchor="#frios">Queijo Gorgonzola</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"  data-aos-anchor="#frios">Salame</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="550"  data-aos-anchor="#frios">Copa</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor="#frios">Peito de Peru</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="650" data-aos-anchor="#frios">Lombinho</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="#frios">Petit Frios</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="750" data-aos-anchor="#frios">Frutas</li>
             </ul>
           </div>
         </section>
 
         <section class="menu-section" id="frias">
-          <div class="menu-block-title">Entradas Frias</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="250">Entradas Frias</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Mousse de Gorgonzola com Tomate Confitado</li>
-              <li>Terrine de queijo brie e mel</li>
-              <li>Canapês com mussarela de búfala, tomate seco e rúcula</li>
-              <li>Canapês com patê de Gorgonzola e Molho de Frutas Vermelhas</li>
-              <li>Guacamole</li>
-              <li>Salada na taça</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor="#frias">Mousse de Gorgonzola com Tomate Confitado</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="400" data-aos-anchor="#frias">Terrine de Brie e Mel</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor="#frias">Canapés com Mussarela de Búfala, Tomate Seco e Rúcula</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor="#frias">Canapés com patê de Gorgonzola e Molho de Frutas Vermelhas</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="#frias">Guacamole</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="800" data-aos-anchor="#frias">Salada na Taça</li>
             </ul>
           </div>
         </section>
 
         <section class="menu-section" id="porcoes">
-          <div class="menu-block-title">Porções</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="250">Porções</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Batata Frita</li>
-              <li>Mandioca Frita</li>
-              <li>Bolinho de Carne Recheado com Queijo</li>
-              <li>Bolinha de Queijo</li>
-              <li>Coxinha</li>
-              <li>Croquete</li>
-              <li>Anel de Cebola</li>
-              <li>Frango Empanado</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor="#porcoes">Batata Frita</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="380" data-aos-anchor="#porcoes">Mandioca Frita</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="460" data-aos-anchor="#porcoes">Bolinho de Carne Recheado com Queijo</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="520" data-aos-anchor="#porcoes">Bolinha de Queijo</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor="#porcoes">Coxinha</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="680" data-aos-anchor="#porcoes">Croquete</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="760" data-aos-anchor="#porcoes">Anel de Cebola</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="840" data-aos-anchor="#porcoes">Frango Empanado</li>
             </ul>
           </div>
         </section>
 
         <section class="menu-section" id="petitmenu">
-          <div class="menu-block-title">Petit Menu</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="250">Petit Menu</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Mignon ao Molho de Gorgonzola</li>
-              <li>Filé Mignon Suíno Acebolado</li>
-              <li>Linguiça Gourmet</li>
-              <li>Escondidinho de Carne Seca</li>
-              <li>Risotto de Parmesão com Alho Poró</li>
-              <li>Pães Variados</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor="#petitmenu">Filé Mignon ao Molho de Gorgonzola</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="400" data-aos-anchor="#petitmenu">Filé Mignon Suíno Acebolado</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor="#petitmenu">Linguiça Gourmet</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor="#petitmenu">Escondidinho de Carne Seca</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="#petitmenu">Risotto de Parmesão com Alho Poró</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="800" data-aos-anchor="#petitmenu">Pães Variados</li>
             </ul>
           </div> 
         </section>
         <section class="menu-section" id="sushi">
-          <div class="menu-block-title">Ilha de Sushis</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="220">Ilha de Sushis</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Ceviche</li>
-              <li>Nigiri de Salmão</li>
-              <li>Hossomaki de Salmão</li>
-              <li>Hot Roll</li>
-              <li>Joe de Salmão</li>
-              <li>Uramaki de Salmão com Cream Cheese</li>
-              <li>California Holl</li>
-              <li>Temaki de Salmão Cebolinha e Crema Cheese Califórnia</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor="#sushi">Ceviche</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="380" data-aos-anchor="#sushi">Nigiri de Salmão</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="460" data-aos-anchor="#sushi">Hossomaki de Salmão</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="540" data-aos-anchor="#sushi">Hot Roll</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="620" data-aos-anchor="#sushi">Joe de Salmão</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="#sushi">Uramaki de Salmão com Cream Cheese</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="760" data-aos-anchor="#sushi">California Roll</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="820" data-aos-anchor="#sushi">Temaki de Salmão, Cebolinha e Cream Cheese ou Califórnia</li>
             </ul>
           </div>
         </section>
 
         <section class="menu-section" id="sobremesas">
-          <div class="menu-block-title">Sobremesas</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="300" data-aos-anchor=#sobremesas>Sobremesas</div>
 
-          <div class="menu-block-subtitle">Bolo</div>
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#sobremesas>Bolo</div>
           <div class="menu-block">
-            <ul class="list-unstyled">
-              <li>Massa de pão de Ló recheada de creme de leite ninho com nozes e morango com cobertura de Chantininho</li>
+            <ul id="bolo" class="list-unstyled">
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor=#sobremesas>Massa de pão de ló recheada de creme de leite ninho com nozes e morango com cobertura de chantininho</li>
             </ul>
           </div>
-          <div class="menu-block-subtitle">Docinhos</div>
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#sobremesas>Docinhos</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Brigadeiro de Nozes com Doce de Leite</li>
-              <li>Brigadeiro de Pistache</li>
-              <li>Brigadeiro de Chocolate Belga</li>
-              <li>Brigadeiro de Chocolate Meio Amargo</li>
-              <li>Brigadeiro de Crème Brûlée</li>
-              <li>Brigadeiro de Nutella com Avelã</li>
-              <li>Brigadeiro de Romeu e Julieta</li>
-              <li>Surpresa de Uva</li>
-              <li>Brigadeiro de Doce de Leite com Coco Queimado</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="550" data-aos-anchor=#sobremesas>Brigadeiro de Nozes com Doce de Leite</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor=#sobremesas>Brigadeiro de Pistache</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="650" data-aos-anchor=#sobremesas>Brigadeiro de Chocolate Belga</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor=#sobremesas>Brigadeiro de Chocolate Meio Amargo</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="750" data-aos-anchor=#sobremesas>Brigadeiro de Crème Brûlée</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="800" data-aos-anchor=#sobremesas>Brigadeiro de Nutella com Avelã</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="850" data-aos-anchor=#sobremesas>Brigadeiro de Romeu e Julieta</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="900" data-aos-anchor=#sobremesas>Surpresa de Uva</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="950" data-aos-anchor=#sobremesas>Brigadeiro de Doce de Leite com Coco Queimado</li>
             </ul>
           </div> 
         </section>
 
 
         <section class="menu-section" id="bebidas">
-          <div class="menu-block-title">Bebidas</div>
-          <div class="menu-block-subtitle">Bebidas servidas na mesa</div>
+          <div class="menu-block-title" data-aos="fade-right" data-aos-delay="50" data-aos-duration="300"> Bebidas</div>
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="400" data-aos-anchor=#bebidas>Bebidas servidas na mesa</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Água</li>
-              <li>Coca-Cola</li>
-              <li>Guaraná Antártica</li>
-              <li>Cerveja Original</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="450" data-aos-anchor=#bebidas>Água</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#bebidas>Coca-Cola</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="550" data-aos-anchor=#bebidas>Guaraná Antártica</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor=#bebidas>Cerveja Original</li>
             </ul>
           </div>
 
-          <div class="menu-block-subtitle">Bebidas servidas pelo Bartender</div>
-          <div class="menu-block-subsubtitle">A partir das 23h30 </div>
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="450" data-aos-anchor=#bebidas>Bebidas servidas pelo bartender</div>
+          <div class="menu-block-subsubtitle"   data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#bebidas>A partir das 23h30 </div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Suco de Laranja e Maracujá</li>
+              <li  data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#bebidas>Suco de Laranja e Maracujá</li>
 
               <a data-toggle="collapse" href="#collapse-alcoolicas" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
-                <li> Sugestões de Drinks Alcóolicos (clique para expandir) </li></a>
+                <li  data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor=#bebidas> Sugestões de Drinks Alcóolicos (clique para expandir) </li></a>
 
                 <div class="collapse" id="collapse-alcoolicas">
                   <div class="cardapio-bartender card card-body">
@@ -205,7 +212,7 @@
                 </div>
 
                 <a data-toggle="collapse" href="#collapse-nao-alcoolicas" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
-                  <li> Sugestões de Coquetéis Não-Alcóolicos (clique para expandir) </li></a>
+                  <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor=#bebidas> Sugestões de Coquetéis Não-Alcóolicos (clique para expandir) </li></a>
   
                   <div class="collapse" id="collapse-nao-alcoolicas">
                     <div class="cardapio-bartender card card-body">
@@ -219,15 +226,14 @@
                   </div>
 
                   <a data-toggle="collapse" href="#collapse-monte" role="button" aria-expanded="false" aria-controls="collapse-alcoolicas">
-                    <li> Monte seu drink (clique para expandir) </li></a>
-    
+                    <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="800" data-aos-anchor=#bebidas> Monte seu drink (clique para expandir) </li></a>
                     <div class="collapse" id="collapse-monte">
                       <div class="cardapio-bartender card card-body">
                         <ul class="list-unstyled">
                           <li><b>Bebidas alcóolicas:</b> Vodka, Cachaça, Vinho Tinto Suave, Rum, Gim e Sake</li>
-                          <li>Bebidas não-alcóolicas: Suco de Laranja, Maracujá, Água de Coco, Soda e Citrus</li>
-                          <li>Frutas: Morango, Kiwi, Limão, Abacaxi e Uva</li>
-                          <li>Especiarias: Alecrim, Hortelã, Cravo, Canela, Pimenta Rosa e Anis Estrelado</li>
+                          <li><b>Bebidas não-alcóolicas:</b> Suco de Laranja, Maracujá, Água de Coco, Soda e Citrus</li>
+                          <li><b>Frutas:</b> Morango, Kiwi, Limão, Abacaxi e Uva</li>
+                          <li><b>Especiarias:</b> Alecrim, Hortelã, Cravo, Canela, Pimenta Rosa e Anis Estrelado</li>
                         </ul>
                       </div>
                     </div>
@@ -240,80 +246,34 @@
 
 
 
-          <div class="menu-block-subtitle">Bebidas disponíveis no Cantinho do Whisky</div>
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="450" data-aos-anchor=#bebidas>Bebidas disponíveis no Cantinho do Whisky</div>
           <div class="menu-block">
             <ul class="list-unstyled">
-              <li>Whisky Chivas Regal 12 anos</li>
-              <li>Whisky Ballantine's 12 anos</li>
-              <li>Whisky Johnnie Walker Black Label</li>
-              <li>Whisky Johnnie Walker Double Black</li>
-              <li>Whisky Jack Daniel's</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor="bebidas">Whisky Chivas Regal 12 anos</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="600" data-aos-anchor="bebidas">Whisky Ballantine's 12 anos</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="bebidas">Whisky Johnnie Walker Red Label</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor="bebidas">Whisky Johnnie Walker Black Label</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="900" data-aos-anchor="bebidas">Whisky Jack Daniel's</li>
             </ul>
           </div>
 
-          <div class="menu-block-subtitle">Bebidas servidas após o brinde</div>
-          <div class="menu-block-subsubtitle">Os espumantes serão servidos na mesa e depois ficarão disponíveis no Cantinho do Whisky</div>
-          <div class="menu-block">
+          <div class="menu-block-subtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="450" data-aos-anchor=#bebidas>Bebidas servidas após o brinde</div>
+          <div class="menu-block-subsubtitle" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-anchor=#bebidas>Os espumantes serão servidos na mesa e depois ficarão disponíveis no Cantinho do Whisky</div>
+          <div class="menu-block" id="last-block">
             <ul class="list-unstyled">
-              <li>Espumante Salton Prosecco</li>
-              <li>Espumante Salton Moscatel</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-anchor=#bebidas>Espumante Salton Prosecco</li>
+              <li data-aos="fade-right" data-aos-delay="50" data-aos-duration="900" data-aos-anchor=#bebidas>Espumante Salton Moscatel</li>
             </ul>
           </div>
 
+        <img id="pikachu" data-aos="zoom-out" data-aos-easing="ease-in-black" data-aos-offset="0" data-aos-delay="50" data-aos-duration="500" src="./images/footer2.png"></img>
         </section>
-
-
-
-    <script>
-        let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-    </script>
 
   </body>
 
   <script>
     AOS.init();
   </script>
-  
-<!--
-  <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      Link with href
-    </a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Button with data-target
-    </button>
-  </p>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-    </div>
-  </div>
-
-  
-  <a class="btn btn-link" href="#" data-toggle="collapse" data-target="#target1">
-      What is Lorem Ipsum?
-  </a>
-  <div id="target1" class="collapse">
-     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ...
-  </div>
--->
-
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
